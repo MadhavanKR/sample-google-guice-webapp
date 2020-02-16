@@ -2,8 +2,8 @@ package services;
 
 public class HelloWorldService {
 
-    public String getMessage() {
-        return "hello world";
+    public String getMessage(String user) {
+        return "hello " + user;
     }
 
 }
