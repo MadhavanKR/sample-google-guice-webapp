@@ -1,7 +1,8 @@
 This is a sample web application developed using google juice framework and the application is run on an embedded jetty server
 
 Important concepts:
-*) The execution starts with the Main class where we create and configure a "ServletContextHandler" object. 
+*) The execution starts with the Main class where we create and configure a "ServletContextHandler" object.
+</br> 
 *) The ServletContextHandler object is a programmatic equivalent of the traditional deployment descriptor "web.xml"
 *) We first add the AuthenticationFilter and later the GuiceFilter to the ServletContextHandler object since we want the requests to be processed in that order. That is, we want the requests to be authenticated first and served later.
 *) Adding GuiceFilter class as an filter is our way of letting the jetty server know that all the requests matching a certain pattern must be routed to the GuiceFilter, which is the spring's DispatcherServlet equivalent in Guice.
